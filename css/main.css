@@ -1,0 +1,478 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ :root {
+  --main-color: #2D6BD0;
+  --main-light-color: #4F84D9;
+  --main-lighter-color: #78A2E4;
+  --main-dark-color: #0E56C8;
+  --main-darker-color:#093E91;
+  --secondary-color: #FFAF23;
+  --secondary-light-color: #FFA200;
+  --secondary-dark-color:#DB8B00;
+  --text-color: #252525;
+  --secondary-text-color: #8F9BB3;
+  --bg-color: #F3F4FA;
+  --bg-two-color: #E6EBF4;
+}
+
+html,body {
+  height:100%;
+}
+body {
+  min-height:100%;
+  position: relative;
+  background-color: white;
+}
+@media only screen and (max-width:600px) {
+  .nav {
+    height:50vh;
+  }
+}
+.navbar-wrapper .scrolled{
+  background:rgb(250, 243, 243);
+}
+.nav-wrapper ul li a {
+  color:var(--text-color);
+}
+.promo i {
+  color:var(--main-light-color);
+}
+.read-more-btn {
+  padding-top:2px;
+  background-color: var(--secondary-color);
+}
+.read-more-btn:hover {
+  background-color: var(--secondary-light-color);
+}
+.read-more-btn span {
+  transform: translateY(-5px);
+  display:inline-block;
+}
+.read-more-btn:focus {
+  background-color: var(--secondary-light-color);
+}
+ .btn-deals {
+   background-color: var(--main-color);
+   text-transform: none;
+ }
+
+ .btn-deals:hover {
+   background-color: var(--main-light-color);
+ }
+ .sidenav-trigger {
+   color: var(--main-color);
+ }
+ .flight-search {
+   width:40%;
+   margin-left:0px;
+   margin-bottom:0px;
+   border-radius:5px;
+   -webkit-box-shadow: 0px 1px 15px 0px rgba(145,145,145,1);
+  -moz-box-shadow: 0px 1px 15px 0px rgba(145,145,145,1);
+  box-shadow: 0px 1px 15px 0px rgba(145,145,145,1);
+ }
+ .input-field .prefix ~ input, .input-field .prefix ~ textarea, .input-field .prefix ~ label, .input-field .prefix ~ .validate ~ label, .input-field .prefix ~ .helper-text, .input-field .prefix ~ .autocomplete-content {
+  margin-left: 3rem;
+  
+  width: 92%;
+  width: calc(100% - 3rem);
+}
+.flight-search .location {
+  width:1.6rem;
+  transform: translate(125px, 5px);
+}
+.flight-search .search {
+  background-color: var(--main-color);
+  color:white;
+  transform: translate(-12px, 0px);
+  line-height: 21px;
+  padding:21px 35px;
+  height:100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.search-form {
+  margin:0px!important;
+  width:100%;
+}
+.input-field {
+  margin-top:0px!important;
+  margin-bottom:0px!important;
+  padding-right:-0px!important;
+}
+input[type=text]:not(.browser-default) {
+  border-bottom: none;
+}
+.input-field .prefix {
+  top:1.5rem;
+  transform: rotateZ(90deg);
+  color: var(--secondary-text-color);
+}
+.sign-up {
+  position: absolute;
+  top:1%;
+  right:6%;
+}
+.destinations {
+  display:flex;
+  color:var(--secondary-text-color);
+}
+.destinations p {
+  padding:6px 10px;
+  background-color:#f3f5f7;
+  margin-right:30px;
+  border-radius:20px;
+}
+.flight-form {
+  height:80vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-two-color);
+}
+.flight-form .tab a {
+  color:#ffffff;
+  background-color: var(--main-dark-color);
+}
+.flight-form .tabs .tab a.active {
+  background-color: #ffffff;
+  color: var(--main-darker-color);
+  border-bottom: var(--main-darker-color)!important;
+}
+.flight-form .tabs .tab a:hover {
+  color:var(--main-darker-color);
+}
+.flight-form.tabs .tab .a:last-child:hover {
+  background:url('/img/cruises.png') center no-repeat var(--main-darker-color)!important;
+}
+.flight-form .tabs .tab .form-icon {
+  transform: translate(-8px,5px);
+}
+#car-rental .select-wrapper .dropdown-content .select-dropdown {
+  position: absolute;
+  top:0px!important;
+}
+#flights, #flights1, #flights2, #flights3 {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom:20px;
+}
+.input-field {
+  padding: 0px 10px;
+}
+.btn-search {
+  width:100%;
+  background-color: var(--secondary-color);
+}
+.btn-search:hover {
+  background-color:var(--secondary-dark-color);
+}
+.tabs .indicator {
+  background-color: #38B6F6;
+}
+.flight-form label {
+  color:var(--text-color);
+}
+.select-dropdown li.disabled > span {
+  color:var(--secondary-text-color);
+}
+.flight-row {
+  margin-bottom:0px;
+}
+.flight-form .flight-col {
+  padding:0px;
+}
+input[type=text]:not(.browser-default) {
+  text-align: center;
+}
+
+/*Deals*/
+.header {
+  height:100vh;
+  background-image:url('/img/hero-section.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+.deals {
+  height:100vh;
+  background-image:url('https://images.unsplash.com/photo-1485149316715-2cce76e6ee74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-panel {
+  border-radius:15px;
+}
