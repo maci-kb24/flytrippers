@@ -1,13 +1,4 @@
-(function($){
-  $(function(){
-
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
-
-  }); // end of document ready
-
-  
-})(jQuery); // end of jQuery name space
+M.AutoInit();
 
 $(document).ready(function(){
   $('input.autocomplete').autocomplete({
@@ -29,8 +20,4 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('.datepicker').datepicker();
-});
-
-$(document).ready(function(){
-  $('.scrollspy').scrollSpy();
 });

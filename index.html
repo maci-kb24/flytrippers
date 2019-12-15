@@ -26,21 +26,23 @@
 
   <body cz-shortcut-listen="true">
     <header class="header">
-      <nav class="transparent">
-          <div class="container">
-              <div class="nav-wrapper">
-                  <a id="logo-container" href="#" class="logo left"><img src="img/logo-text.png"></a> 
-                  <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="deals.html">Deals</a></li>
-                  <li><a href="collapsible.html">Resources</a></li>
-                  <li><a href="collapsible.html">Tips</a></li>
-                  <li><a href="collapsible.html">Inpiration</a></li>
-                  <li><a href="collapsible.html">Travel Hacking</a></li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+      <div class="navbar-fixed">
+        <nav class="white">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a id="logo-container" href="#" class="logo left"><img src="img/logo-text.png"></a> 
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="collapsible.html">Resources</a></li>
+                    <li><a href="collapsible.html">Tips</a></li>
+                    <li><a href="collapsible.html">Inpiration</a></li>
+                    <li><a href="collapsible.html">Travel Hacking</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </div>
     </header>
     <section class="services">
         <div class="container">
@@ -82,249 +84,14 @@
                 </div>
               </div>
               <div class="row">
-                <div id="deals-services scrollspy" class="col s12 center-align">
+                <div id="deals-services" class="col s12 center-align">
                     <a href="/deals.html#deals-services" class="waves-effect waves-light btn read-more-btn"><span>Read More</span><i class="material-icons">arrow_right</i></a>
                 </div>
               </div>
             </div>
           </div>
     </section>
-    <section class="flight-form">
-      <div class="container">
-        <div class="row flight-row">
-          <div class="col s12 flight-col">
-            <ul class="tabs">
-              <li class="tab col s3"><a href="#flights" class="active"><i class="material-icons form-icon">airplanemode_active</i>Flights</a></li>
-              <li class="tab col s3"><a href="#flights1"><i class="material-icons form-icon">directions_car</i>Car Rental</a></li>
-              <li class="tab col s3"><a href="#flights2"><i class="material-icons form-icon">hotel</i>Hotels</a></li>
-              <li class="tab col s3"><a href="#flights3"><i class="material-icons form-icon">directions_boat</i>Cruises</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row" id="flights">
-          <div class="col s12">
-            <div class="input-field col s2">
-              <select>
-                <option value="" disabled selected>City Or Aiport</option>
-                <option value="1">Alaska</option>
-                <option value="2">Bahamas</option>
-                <option value="3">Bermuda</option>
-                <option value="4">Canada</option>
-              </select>
-              <label>Flying From:</label>
-            </div>
-            <div class="input-field col s2">
-              <select>
-                <option value="" disabled selected>City Or Aiport</option>
-                <option value="1">Alaska</option>
-                <option value="2">Bahamas</option>
-                <option value="3">Bermuda</option>
-                <option value="4">Canada</option>
-              </select>
-              <label>To:</label>
-            </div>
-            <div class="input-field col s2">
-                <input type="text" name="date" materialize="pickadate [materializeParams]="[{ format: 'dd/mm/yyyy' }] class="datepicker" placeholder="Mm/Dd/Yy">
-                <label>Departing:</label>
-            </div>
-            <div class="input-field col s2">
-                <input type="text" name="date" materialize="pickadate [materializeParams]="[{ format: 'dd/mm/yyyy' }] class="datepicker" placeholder="Mm/Dd/Yy">
-                <label>Returning:</label>
-            </div>
-            <div class="input-field col s1">
-                <select>
-                  <option value="" disabled selected>1</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-                <label>Adult:</label>
-              </div>
-            <div class="input-field col s1">
-              <select>
-                <option value="" disabled selected>1</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <label>Child:</label>
-            </div>
-            <div class="col s2">
-            <a href="#" class=" btn btn-search">Search</a>
-            </div>
-          </div>
-        </div>
-        <div class="row" id="flights1">
-          <div class="col s12">
-            <div class="input-field col s2">
-              <select>
-                <option value="" disabled selected>City Or Aiport</option>
-                <option value="1">Alaska</option>
-                <option value="2">Bahamas</option>
-                <option value="3">Bermuda</option>
-                <option value="4">Canada</option>
-              </select>
-              <label>Flying From:</label>
-            </div>
-            <div class="input-field col s2">
-              <select>
-                <option value="" disabled selected>City Or Aiport</option>
-                <option value="1">Alaska</option>
-                <option value="2">Bahamas</option>
-                <option value="3">Bermuda</option>
-                <option value="4">Canada</option>
-              </select>
-              <label>To:</label>
-            </div>
-            <div class="input-field col s2">
-                <input type="text" name="date" materialize="pickadate [materializeParams]="[{ format: 'dd/mm/yyyy' }] class="datepicker" placeholder="Mm/Dd/Yy">
-                <label>Departing:</label>
-            </div>
-            <div class="input-field col s2">
-                <input type="text" name="date" materialize="pickadate [materializeParams]="[{ format: 'dd/mm/yyyy' }] class="datepicker" placeholder="Mm/Dd/Yy">
-                <label>Returning:</label>
-            </div>
-            <div class="input-field col s1">
-                <select>
-                  <option value="" disabled selected>1</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-                <label>Adult:</label>
-              </div>
-            <div class="input-field col s1">
-              <select>
-                <option value="" disabled selected>1</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <label>Child:</label>
-            </div>
-            <div class="col s2">
-            <a href="#" class=" btn btn-search">Search</a>
-            </div>
-          </div>
-        </div>
-        <div class="row" id="flights2">
-          <div class="col s12">
-            <div class="input-field col s2">
-              <select>
-                <option value="" disabled selected>City Or Aiport</option>
-                <option value="1">Alaska</option>
-                <option value="2">Bahamas</option>
-                <option value="3">Bermuda</option>
-                <option value="4">Canada</option>
-              </select>
-              <label>Flying From:</label>
-            </div>
-            <div class="input-field col s2">
-              <select>
-                <option value="" disabled selected>City Or Aiport</option>
-                <option value="1">Alaska</option>
-                <option value="2">Bahamas</option>
-                <option value="3">Bermuda</option>
-                <option value="4">Canada</option>
-              </select>
-              <label>To:</label>
-            </div>
-            <div class="input-field col s2">
-                <input type="text" name="date" materialize="pickadate [materializeParams]="[{ format: 'dd/mm/yyyy' }] class="datepicker" placeholder="Mm/Dd/Yy">
-                <label>Departing:</label>
-            </div>
-            <div class="input-field col s2">
-                <input type="text" name="date" materialize="pickadate [materializeParams]="[{ format: 'dd/mm/yyyy' }] class="datepicker" placeholder="Mm/Dd/Yy">
-                <label>Returning:</label>
-            </div>
-            <div class="input-field col s1">
-                <select>
-                  <option value="" disabled selected>1</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-                <label>Adult:</label>
-              </div>
-            <div class="input-field col s1">
-              <select>
-                <option value="" disabled selected>1</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <label>Child:</label>
-            </div>
-            <div class="col s2">
-            <a href="#" class=" btn btn-search">Search</a>
-            </div>
-          </div>
-        </div>
-        <div class="row" id="flights3">
-          <div class="col s12">
-            <div class="input-field col s2">
-              <select>
-                <option value="" disabled selected>City Or Aiport</option>
-                <option value="1">Alaska</option>
-                <option value="2">Bahamas</option>
-                <option value="3">Bermuda</option>
-                <option value="4">Canada</option>
-              </select>
-              <label>Flying From:</label>
-            </div>
-            <div class="input-field col s2">
-              <select>
-                <option value="" disabled selected>City Or Aiport</option>
-                <option value="1">Alaska</option>
-                <option value="2">Bahamas</option>
-                <option value="3">Bermuda</option>
-                <option value="4">Canada</option>
-              </select>
-              <label>To:</label>
-            </div>
-            <div class="input-field col s2">
-                <input type="text" name="date" materialize="pickadate [materializeParams]="[{ format: 'dd/mm/yyyy' }] class="datepicker" placeholder="Mm/Dd/Yy">
-                <label>Departing:</label>
-            </div>
-            <div class="input-field col s2">
-                <input type="text" name="date" materialize="pickadate [materializeParams]="[{ format: 'dd/mm/yyyy' }] class="datepicker" placeholder="Mm/Dd/Yy">
-                <label>Returning:</label>
-            </div>
-            <div class="input-field col s1">
-                <select>
-                  <option value="" disabled selected>1</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-                <label>Adult:</label>
-              </div>
-            <div class="input-field col s1">
-              <select>
-                <option value="" disabled selected>1</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <label>Child:</label>
-            </div>
-            <div class="col s2">
-            <a href="#" class=" btn btn-search">Search</a>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <section class="flight-search-form">
+    <!-- <section class="flight-search-form">
         <div class="container">
             <div class="row header-title">
               <h1>Your destination for amazing flight deals</h1>
@@ -354,7 +121,7 @@
               <p><i class="material-icons">more_horiz</i></p>
             </div>
           </div>
-    </section>
+    </section> -->
     <!--  Scripts-->
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

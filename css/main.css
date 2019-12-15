@@ -300,11 +300,11 @@ body {
     height:50vh;
   }
 }
-.navbar-wrapper .scrolled{
-  background:rgb(250, 243, 243);
-}
 .nav-wrapper ul li a {
   color:var(--text-color);
+}
+.services {
+  padding:60px 0px;
 }
 .promo i {
   color:var(--main-light-color);
@@ -330,9 +330,6 @@ body {
 
  .btn-deals:hover {
    background-color: var(--main-light-color);
- }
- .sidenav-trigger {
-   color: var(--main-color);
  }
  .flight-search {
    width:40%;
@@ -400,15 +397,17 @@ input[type=text]:not(.browser-default) {
   display:flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg-two-color);
+  background-color: white;
 }
 .flight-form .tab a {
   color:#ffffff;
   background-color: var(--main-dark-color);
 }
 .flight-form .tabs .tab a.active {
-  background-color: #ffffff;
+  background-color: var(--bg-color);
   color: var(--main-darker-color);
+}
+.flight-form .tabs .tab.active {
   border-bottom: var(--main-darker-color)!important;
 }
 .flight-form .tabs .tab a:hover {
@@ -425,7 +424,7 @@ input[type=text]:not(.browser-default) {
   top:0px!important;
 }
 #flights, #flights1, #flights2, #flights3 {
-  background-color: white;
+  background-color: var(--bg-color);
   padding-top: 50px;
   padding-bottom:20px;
 }
@@ -440,7 +439,7 @@ input[type=text]:not(.browser-default) {
   background-color:var(--secondary-dark-color);
 }
 .tabs .indicator {
-  background-color: #38B6F6;
+  background-color: var(--main-darker-color);
 }
 .flight-form label {
   color:var(--text-color);
@@ -468,10 +467,21 @@ input[type=text]:not(.browser-default) {
 }
 .deals {
   height:100vh;
-  background-image:url('https://images.unsplash.com/photo-1485149316715-2cce76e6ee74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80');
+  background:url('/img/deals-hero.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.dark-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.deals-headline {
+  height:80vh;
+}
+#deals-services {
+  padding-top:40px;
 }
 .card-panel {
   border-radius:15px;
