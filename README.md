@@ -1,1 +1,3 @@
-# Documentation work for Flytrippers Jan. 6th to Mar 25th
+# Documentation work for Flytrippers
+
+### Timeframe: January 6th to March 25th
